@@ -1,151 +1,183 @@
-/* Reset some basic styles */
-body, h1, h2, h3, ul, li, p, dl, dt, dd {
-  margin: 0;
-  padding: 0;
+/* Spider-Verse Blog Theme by Miles */
+
+:root {
+  --red: #BF0426;
+  --blue: #172D44;
+  --black: #0A0E17;
+  --gray: #161616;
+  --offwhite: #FEF9FF;
+  --font: 'Outfit', sans-serif;
 }
 
 body {
-  font-family: 'Segoe UI', sans-serif;
-  background: #f4f4f4;
-  color: #333;
-  line-height: 1.6;
+  margin: 0;
+  font-family: var(--font);
+  background-color: var(--black);
+  color: var(--offwhite);
 }
 
-a {
-  color: #0084ff;
+/* Header */
+.header {
+  background: var(--blue);
+  padding: 1rem 0;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 20px;
+}
+
+.brand {
+  font-size: 1.8rem;
+  color: var(--offwhite);
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.nav ul {
+  display: flex;
+  list-style: none;
+  gap: 2rem;
+}
+
+.nav a {
+  color: var(--offwhite);
   text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
 }
 
-a:hover {
+.nav a:hover {
+  color: var(--red);
+}
+
+/* Hero */
+.hero {
+  position: relative;
+  height: 80vh;
+  background: url('https://www.transparenttextures.com/patterns/asfalt-dark.png'), var(--black);
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  overflow: hidden;
+}
+
+.hero .overlay {
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: linear-gradient(145deg, #000000a0, #172d44e6);
+  z-index: 1;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  color: var(--offwhite);
+  padding: 0 20px;
+}
+
+.hero h2 {
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  color: #ccc;
+  margin-bottom: 1.5rem;
+}
+
+.btn {
+  background-color: var(--red);
+  color: white;
+  padding: 12px 28px;
+  font-weight: 600;
+  border-radius: 999px;
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #8a0019;
+}
+
+/* Main Content */
+.container {
+  max-width: 1100px;
+  margin: auto;
+  padding: 60px 20px;
+}
+
+.post-grid {
+  display: grid;
+  gap: 30px;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+}
+
+.post-card {
+  background-color: var(--gray);
+  border-radius: 12px;
+  padding: 24px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.4);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.post-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.6);
+}
+
+.post-card h3 {
+  font-size: 1.4rem;
+  margin-bottom: 0.5rem;
+}
+
+.post-card .meta {
+  font-size: 0.9rem;
+  color: #999;
+  margin-bottom: 1rem;
+}
+
+.read-more {
+  text-decoration: none;
+  font-weight: bold;
+  color: var(--red);
+}
+
+.read-more:hover {
   text-decoration: underline;
 }
 
-#container {
-  width: 960px;
-  margin: 0 auto;
-  background: #fff;
-  padding: 20px;
-}
-
-h1 {
-  font-size: 32px;
-  margin-bottom: 10px;
-}
-
-/* Navigation */
-#nav, #subscribe {
-  list-style: none;
-  margin-bottom: 20px;
-}
-
-#nav li, #subscribe li {
-  display: inline-block;
-  margin-right: 15px;
-}
-
-/* Content */
-#content {
-  float: left;
-  width: 65%;
-}
-
-.post {
-  margin-bottom: 30px;
-}
-
-.post h2 {
-  font-size: 24px;
-  color: #333;
-}
-
-.meta {
-  font-size: 12px;
-  color: #999;
-}
-
-.pagination {
-  margin-top: 20px;
-}
-
-.pagination a {
-  margin-right: 10px;
-  font-weight: bold;
-}
-
-/* Sidebar */
-#sidebar {
-  float: right;
-  width: 30%;
-}
-
-#categories ul {
-  list-style: square inside;
-  margin-bottom: 20px;
-}
-
-#mysites dl dt {
-  font-weight: bold;
-}
-
-#mysites dl dd {
-  margin-bottom: 10px;
-  margin-left: 20px;
-}
-
 /* Footer */
-#footer-container {
-  clear: both;
-  margin-top: 40px;
-  background: #222;
-  color: #fff;
-  padding: 20px;
+.footer {
+  background-color: var(--blue);
+  color: #ddd;
+  text-align: center;
+  padding: 40px 20px;
+  font-size: 0.9rem;
 }
 
-#footer a {
-  color: #fff;
+.footer p {
+  margin: 0.5rem 0;
 }
 
-#follow {
-  display: inline-block;
-  padding: 10px 15px;
-  background: #0084ff;
-  color: #fff;
-  border-radius: 4px;
-}
+/* Responsive */
+@media (max-width: 768px) {
+  .hero h2 {
+    font-size: 2rem;
+  }
 
-#latest-posts {
-  list-style: disc;
-  margin-top: 10px;
-  margin-left: 20px;
-  color: #ccc;
-}
-
-.subscribe a {
-  display: inline-block;
-  background: #ff8800;
-  color: white;
-  padding: 6px 10px;
-  border-radius: 3px;
-  margin-top: 5px;
-}
-
-/* Music and Photos */
-#music, #photos {
-  list-style: none;
-  margin-top: 20px;
-}
-
-#photos li {
-  display: inline-block;
-  margin-right: 10px;
-}
-
-.back-to-top {
-  margin-top: 20px;
-  text-align: right;
-}
-
-.back-to-top a {
-  font-size: 14px;
-  color: #888;
+  .nav ul {
+    flex-direction: column;
+    gap: 1rem;
+  }
 }

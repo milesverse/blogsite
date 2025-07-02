@@ -1,97 +1,69 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <title>milesverse </title>
-  <link href="style.css" rel="stylesheet" type="text/css" media="screen" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Miles — Design from the Multiverse</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700&display=swap" rel="stylesheet" />
 </head>
 <body>
-  <div id="container">
-    <h1>milesverse</h1>
-    <ul id="nav">
-      <li><a href="#">Home</a></li>
-      <li><a href="#">About</a></li>
-      <li><a href="#">Portfolio</a></li>
-      <li><a href="#">Contact</a></li>
-    </ul>
-    <ul id="subscribe">
-      <li><a href="http://linkedin.com/in/senatorolorunnisola">Follow on Linkedin</a></li>
-      <li><a href="http://github.com/milesverse">Follow on Github </a></li>
-    </ul>
 
-    <div id="content">
-      <div class="post">
-        <h2><a href="#">Jake Plays With His New Dog Friends At the Park</a></h2>
-        <p class="meta">
-          <span class="date">July 30th</span> | 
-          <span class="comments">12 Comments</span>
-        </p>
-        <p>This is where the post content will go.</p>
-      </div>
-
-      <p class="pagination">
-        <a href="#" class="prev">← Older posts</a>
-        <a href="#" class="next">Newer posts →</a>
-      </p>
-    </div>
-
-    <div id="sidebar">
-      <div id="categories">
-        <h3>Categories</h3>
+  <header class="header">
+    <div class="container">
+      <h1 class="brand">Miles</h1>
+      <nav class="nav">
         <ul>
+          <li><a href="#">Home</a></li>
           <li><a href="#">Articles</a></li>
-          <li><a href="#">Tutorials</a></li>
-          <li><a href="#">Inspiration</a></li>
-          <li><a href="#">Freebies</a></li>
+          <li><a href="#">Projects</a></li>
+          <li><a href="#">Contact</a></li>
         </ul>
-      </div>
-
-      <div id="mysites">
-        <h3>My Sites</h3>
-        <dl>
-          <dt><a href="https://medium.com/@senatoreniola">Miles publications</a></dt>
-          <dd>My main blog of design tutorials, articles and inspiration.</dd>
-          <dt><a href="#">Line25</a></dt>
-          <dd>A web design blog sharing tips and trends.</dd>
-          <dt><a href="#">sonny the Dog</a></dt>
-          <dd>My dog’s very own website.</dd>
-          <dt><a href="#">MilesGraphics</a></dt>
-          <dd>My design services and portfolio.</dd>
-        </dl>
-      </div>
+      </nav>
     </div>
+  </header>
 
-    <div id="footer-container">
-      <div id="footer">
-        <p><a id="follow" href="#">Follow me</a></p>
-
-        <ul id="latest-posts">
-          <li><a href="#">Design a Beautiful Cosmic Scene in Photoshop</a></li>
-          <li><a href="#">Jake’s Day at the Park</a></li>
-          <li><a href="#">This Week’s Favourites</a></li>
-          <li><a href="#">Top 10 Web Design Tools</a></li>
-        </ul>
-
-        <ul id="subscribe">
-          <li class="subscribe"><a href="#">Subscribe to Blog</a></li>
-          <li class="subscribe"><a href="#">Subscribe to Line25</a></li>
-        </ul>
-      </div>
+  <section class="hero">
+    <div class="overlay"></div>
+    <div class="hero-content">
+      <h2>Design from the Multiverse</h2>
+      <p>Where creativity meets power, and the web connects it all.</p>
+      <a href="#posts" class="btn">Explore Posts</a>
     </div>
+  </section>
 
-    <ul id="music">
-      <li><a href="#">The Killers</a></li>
-      <li><a href="#">Arctic Monkeys</a></li>
-      <li><a href="#">Radiohead</a></li>
-    </ul>
+  <main id="posts" class="container">
+    <section class="post-grid">
+      <article class="post-card">
+        <h3>The Power of Red & Blue</h3>
+        <p class="meta">July 2, 2025 • 5 min read</p>
+        <p>Explore how Miles’ palette shapes the emotion and energy of digital experiences.</p>
+        <a href="#" class="read-more">Continue reading →</a>
+      </article>
 
-    <ul id="photos">
-      <li><img src="https://www.thekillersmusic.com/wp-content/uploads/sites/1968/2017/09/photo_201709_22_13.jpg" alt="img" /></li>
-      <li><img src="img2.jpg" alt="img" /></li>
-      <li><img src="img3.jpg" alt="img" /></li>
-    </ul>
+      <article class="post-card">
+        <h3>Contrast Like a Superhero</h3>
+        <p class="meta">June 28, 2025 • 4 min read</p>
+        <p>How to use shadow, depth, and bold colors to stand out on any screen.</p>
+        <a href="#" class="read-more">Read more →</a>
+      </article>
 
-    <p class="back-to-top"><a href="#">Back to top</a></p>
-  </div>
+      <article class="post-card">
+        <h3>Web Flow, Literally</h3>
+        <p class="meta">June 15, 2025 • 3 min read</p>
+        <p>Why movement, layout rhythm, and micro-interactions matter in UI/UX.</p>
+        <a href="#" class="read-more">Read more →</a>
+      </article>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>Powered by Spidey Sense 🕸️</p>
+    <p><small>&copy; 2025 Miles. All rights reserved.</small></p>
+  </footer>
+
 </body>
 </html>
+
