@@ -1,81 +1,97 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>blog-site</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="utf-8" />
+  <title>milesverse </title>
+  <link href="style.css" rel="stylesheet" type="text/css" media="screen" />
 </head>
 <body>
-    <div id="container">
-        <div id="header">
-            <h1><a href="#">Miles</a></h1>
-            <ul id="nav">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Archives</a></li>
-                <li><a href="#">Say hello</a></li>
-            </ul>
-            <ul id="subscribe">
-                <li class="Github"><a href="https://github.com/milesverse">Follow on Github</a></li>
-                <li class="Linkedin"><a href="https://linkedin.com/in/senatorolorunnisola">Follow on Linkedin</a></li>
-            </ul>
+  <div id="container">
+    <h1>milesverse</h1>
+    <ul id="nav">
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Portfolio</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+    <ul id="subscribe">
+      <li><a href="http://linkedin.com/in/senatorolorunnisola">Follow on Linkedin</a></li>
+      <li><a href="http://github.com/milesverse">Follow on Github </a></li>
+    </ul>
 
-            <h2>The personal log of senator eniola</h2>
-        </div>
+    <div id="content">
+      <div class="post">
+        <h2><a href="#">Jake Plays With His New Dog Friends At the Park</a></h2>
+        <p class="meta">
+          <span class="date">July 30th</span> | 
+          <span class="comments">12 Comments</span>
+        </p>
+        <p>This is where the post content will go.</p>
+      </div>
 
-        <div id="content">
-            <div id="main">
-                <div class="post">
-                    <h2><a href="#">miles plays with is new pet at home</a></h2>
-                    <p class="date">18 <span>july</span></p>
-                    <ul class="meta">
-                        <li>posted in <a href="#">Vlog</a></li>
-                        <li class="comment"><a href="#">5 comments</a></li>
-                    </ul>
-                    <div class="post-content">
-
-                    </div>
-
-                    <div class="pagination">
-                        <p class="prev"><a href="#">Older posts</a></p>
-                        <p class="next"><a href="#">Newer posts</a></p>
-                    </div>
-                </div>
-
-                <div id="side">
-                    <div id="categories">
-                        <h3>Categories</h3>
-                        <ul>
-                            <li><a href="#">Apple</a> 4</li>
-                            <li><a href="#">Design</a> 3</li>
-                            <li><a href="#">Events</a> 2</li>
-                            <li><a href="#">Giveaway</a> 53</li>
-                            <li><a href="#">Vlogs</a> 43</li>
-                            <li><a href="#">Website News</a> 2</li>
-                        </ul>
-                    </div>
-                    <div id="my-site">
-                        <h3>my site</h3>
-                        <dl>
-                            <dt class="bsg"><a href="#">Slog.spoonGraphics</a></dt>
-                            <dd>My digital playground where i post various design tutorials</dd>
-
-                            <dt class="125"><a href="#">Line25</a></dt>
-                            <dd>My second vlog featuring various web design tutorials, articles and inspiration</dd>
-
-                            <dt class="jakethelab"><a href="#">JakeTheLab</a></dt>
-                            <dd>My dog very own Website. see insights into the life the labrador retriever.</dd>
-
-                            <dt class="spoongraphics"><a href="#">SpoonGraphics</a></dt>
-                            <dd>Home to my creative graphic and web design services and design portfolio </dd>
-                        </dl>
-                    </div>
-                </div>
-            </div>
-        </div>
+      <p class="pagination">
+        <a href="#" class="prev">← Older posts</a>
+        <a href="#" class="next">Newer posts →</a>
+      </p>
     </div>
 
+    <div id="sidebar">
+      <div id="categories">
+        <h3>Categories</h3>
+        <ul>
+          <li><a href="#">Articles</a></li>
+          <li><a href="#">Tutorials</a></li>
+          <li><a href="#">Inspiration</a></li>
+          <li><a href="#">Freebies</a></li>
+        </ul>
+      </div>
 
+      <div id="mysites">
+        <h3>My Sites</h3>
+        <dl>
+          <dt><a href="https://medium.com/@senatoreniola">Miles publications</a></dt>
+          <dd>My main blog of design tutorials, articles and inspiration.</dd>
+          <dt><a href="#">Line25</a></dt>
+          <dd>A web design blog sharing tips and trends.</dd>
+          <dt><a href="#">sonny the Dog</a></dt>
+          <dd>My dog’s very own website.</dd>
+          <dt><a href="#">MilesGraphics</a></dt>
+          <dd>My design services and portfolio.</dd>
+        </dl>
+      </div>
+    </div>
+
+    <div id="footer-container">
+      <div id="footer">
+        <p><a id="follow" href="#">Follow me</a></p>
+
+        <ul id="latest-posts">
+          <li><a href="#">Design a Beautiful Cosmic Scene in Photoshop</a></li>
+          <li><a href="#">Jake’s Day at the Park</a></li>
+          <li><a href="#">This Week’s Favourites</a></li>
+          <li><a href="#">Top 10 Web Design Tools</a></li>
+        </ul>
+
+        <ul id="subscribe">
+          <li class="subscribe"><a href="#">Subscribe to Blog</a></li>
+          <li class="subscribe"><a href="#">Subscribe to Line25</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <ul id="music">
+      <li><a href="#">The Killers</a></li>
+      <li><a href="#">Arctic Monkeys</a></li>
+      <li><a href="#">Radiohead</a></li>
+    </ul>
+
+    <ul id="photos">
+      <li><img src="https://www.thekillersmusic.com/wp-content/uploads/sites/1968/2017/09/photo_201709_22_13.jpg" alt="img" /></li>
+      <li><img src="img2.jpg" alt="img" /></li>
+      <li><img src="img3.jpg" alt="img" /></li>
+    </ul>
+
+    <p class="back-to-top"><a href="#">Back to top</a></p>
+  </div>
 </body>
 </html>
