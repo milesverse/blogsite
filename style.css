@@ -1,0 +1,151 @@
+/* Reset some basic styles */
+body, h1, h2, h3, ul, li, p, dl, dt, dd {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #f4f4f4;
+  color: #333;
+  line-height: 1.6;
+}
+
+a {
+  color: #0084ff;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+#container {
+  width: 960px;
+  margin: 0 auto;
+  background: #fff;
+  padding: 20px;
+}
+
+h1 {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+/* Navigation */
+#nav, #subscribe {
+  list-style: none;
+  margin-bottom: 20px;
+}
+
+#nav li, #subscribe li {
+  display: inline-block;
+  margin-right: 15px;
+}
+
+/* Content */
+#content {
+  float: left;
+  width: 65%;
+}
+
+.post {
+  margin-bottom: 30px;
+}
+
+.post h2 {
+  font-size: 24px;
+  color: #333;
+}
+
+.meta {
+  font-size: 12px;
+  color: #999;
+}
+
+.pagination {
+  margin-top: 20px;
+}
+
+.pagination a {
+  margin-right: 10px;
+  font-weight: bold;
+}
+
+/* Sidebar */
+#sidebar {
+  float: right;
+  width: 30%;
+}
+
+#categories ul {
+  list-style: square inside;
+  margin-bottom: 20px;
+}
+
+#mysites dl dt {
+  font-weight: bold;
+}
+
+#mysites dl dd {
+  margin-bottom: 10px;
+  margin-left: 20px;
+}
+
+/* Footer */
+#footer-container {
+  clear: both;
+  margin-top: 40px;
+  background: #222;
+  color: #fff;
+  padding: 20px;
+}
+
+#footer a {
+  color: #fff;
+}
+
+#follow {
+  display: inline-block;
+  padding: 10px 15px;
+  background: #0084ff;
+  color: #fff;
+  border-radius: 4px;
+}
+
+#latest-posts {
+  list-style: disc;
+  margin-top: 10px;
+  margin-left: 20px;
+  color: #ccc;
+}
+
+.subscribe a {
+  display: inline-block;
+  background: #ff8800;
+  color: white;
+  padding: 6px 10px;
+  border-radius: 3px;
+  margin-top: 5px;
+}
+
+/* Music and Photos */
+#music, #photos {
+  list-style: none;
+  margin-top: 20px;
+}
+
+#photos li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.back-to-top {
+  margin-top: 20px;
+  text-align: right;
+}
+
+.back-to-top a {
+  font-size: 14px;
+  color: #888;
+}
